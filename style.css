@@ -1,0 +1,178 @@
+/*
+Limpar formatações
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/*
+Alinhar meu título e paragrafo
+*/
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+body{
+    height: 100vh;
+}
+/*
+Diminuir a minha logo*/
+.imagemReduzida {
+    position: absolute;  
+    top: 0;             
+    left: 0;            
+    height: 190px;        
+    width: auto;        
+    margin: 20px;          
+    padding: 0;         
+}
+
+.imgcentro {
+    width: 100%;              
+    margin: 0 auto;      
+    max-width: 1200px;      
+    padding: 20px;         
+    box-sizing: border-box; 
+}
+
+header{
+    padding: 40px 6%;
+}
+/*
+Centralizar e limitar a largura máxima*/
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;  
+    margin: 0 auto;     
+    padding: 0 20px;    
+}
+
+
+/*
+Mudando a cor do meu menu*/
+
+header a{
+    color: rgb(167, 155, 155);
+    text-decoration: none;
+    display: inline-block; /*convertendo meu link*/
+    transition: .3s;
+    font-size: 25px;
+}
+/*
+Quando eu passo o mouse encima do meu menu ele da um zoom e sai de cinza para preto*/
+header a:hover{
+    color: black;
+    transform: scale(1.1); /* só funciona em elementos block level, então vou converter meu link*/
+}
+/*
+Tirando as bolinhas do menu*/
+header nav ul{
+    list-style-type: none;
+}
+/*
+Espaçando meu nav*/
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+/*
+Estilizando meus botões*/
+.botaocontato button{
+    padding: 10px 40px;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: darkgray;
+    width: 250px;  
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+}
+
+
+/* ESTILIZANDO A MAIN*/
+section.toposite{
+    padding: 40px 4%;
+}
+
+section.toposite .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.toposite .txtsite h1{
+    font-size: 80px;
+    line-height: 80px;
+}
+
+
+.toposite .txtsite p{
+    margin: 40px 0;
+    font-size: 40px;
+}
+
+.toposite .txtsobre h1{
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.toposite .txtsobre h2{
+    font-size: 50px;
+    line-height: 100px;
+}
+
+.toposite .txtsobre p{
+    margin: 30px 0;
+    font-size: 40px;
+}
+
+/* ENTRE EM CONTATO*/
+
+section.formulario{
+    padding: 80px 4%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    font-size: 50px;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea, .botaoenviar{
+    width: 100%;
+    background-color: rgb(234, 231, 231);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-size: 17px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 350px;
+}
+
+
+.botaoenviar button{
+    width: 420px;
+    text-align: center;
+    cursor: pointer;
+}
